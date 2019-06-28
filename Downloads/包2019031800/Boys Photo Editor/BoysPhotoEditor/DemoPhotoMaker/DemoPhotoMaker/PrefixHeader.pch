@@ -1,0 +1,40 @@
+//
+//  PrefixHeader.pch
+//  DemoPhotoMaker
+//
+//  Created by Chetan Sankhavara on 29/07/17.
+//  Copyright © 2017 Sanay kakadiya. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "AppDelegate.h"
+
+
+/***************** Predefined *****************/
+
+#define STORYBOARD [UIStoryboard storyboardWithName:@"Main" bundle: nil]
+
+#define USERDEFAULT [NSUserDefaults standardUserDefaults]
+#define APPDELEGATE (AppDelegate *)[[UIApplication sharedApplication] delegate]
+
+
+#define ITUNES_URL @"https://itunes.apple.com/us/app/boys-photo-editor/id1267873577?ls=1&mt=8"
+#define ITUNES_UPDATE_URL @"https://itunes.apple.com/us/app/boys-photo-editor/id1267873577?ls=1&mt=8"
+
+
+#define NativeAd @"ca-app-pub-6373442819872825/7676239196"
+#define IntersAd @"ca-app-pub-6373442819872825/7207419060"
+#define BannerAd @"ca-app-pub-6373442819872825/6552812948"
+
+//COLOR
+#define COLOR_LITEGREEN [UIColor colorWithRed:237.0/255.0 green:2.0/255.0 blue:140.0/255.0 alpha:1.0]
+#define COLOR_LITEBLU [UIColor colorWithRed:0.0/255.0 green:150.0/255.0 blue:136.0/255.0 alpha:1.0]
+
+#define IS_IPHONE_4 ( fabs( ( double )[ [ UIScreen mainScreen ] bounds ].size.height - ( double )480 ) < DBL_EPSILON )
+#define IS_IPHONE_5 ( fabs( ( double )[ [ UIScreen mainScreen ] bounds ].size.height - ( double )568 ) < DBL_EPSILON )
+#define IS_IPHONE_6 ( fabs( ( double )[ [ UIScreen mainScreen ] bounds ].size.height - ( double )667.0 ) < DBL_EPSILON )
+#define IS_IPHONE_6P ( fabs( ( double )[ [ UIScreen mainScreen ] bounds ].size.height - ( double )736.0 ) < DBL_EPSILON )
+
+#endif /* PrefixHeader_pch */
